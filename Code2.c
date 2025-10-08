@@ -1,0 +1,29 @@
+//WAP to Read Radius of the Circle and Calculate the Area and Perimeter of the Circle using the Formula`s:-----  1)Area = PI x (Radius)2   ---  2)Perimeter = 2 x PI x Radius
+
+#include <stdio.h>
+#include <conio.h>
+#include <math.h>
+
+void main()
+{
+   float rad;
+   float area,peri;
+   float PI = 3.1415;
+
+printf("ENTER the Radius of Circle: ");
+scanf("%f",&rad);
+
+area = PI * pow(rad,2);
+peri = 2 * PI * rad;
+
+printf("-----------------------------------\n\n");
+printf("Radius of Circle : %10.2f cms\n\n",rad);
+
+printf("-----------------------------------\n\n");
+printf("Area of Circle : %10.2f cms\n\n",area);
+
+printf("Perimeter of Circle : %10.2f cms\n\n",peri);
+printf("-----------------------------------");
+
+getch();
+}
