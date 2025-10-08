@@ -1,0 +1,35 @@
+//WAP to Read any Two Integer Numbers to Perform the Arithmetic Operations (Addition, Subtraction, Multiplication, Division, and Remainder) and Display the Result along with its Proper Headings in Separate Lines.
+
+
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int x, y;
+    int sum, sub, mul, rem;
+    float div;
+    printf("Enter any TWO Integer Numbers\n\n");
+    scanf("%d%d", &x, &y);
+    sum = x + y;
+    sub = x - y;
+    mul = x * y;
+    div = (float)x / y; // Type casting
+    rem = x % y;
+
+    printf("-----------------------------\n\n");
+
+    printf("The value of x : %d\n\n", x);
+    printf("The value of y : %d\n\n", y);
+
+    printf("-----------------------------\n\n");
+
+    printf("Addition : %d\n\n", sum);
+    printf("Substraction : %d\n\n", sub);
+    printf("Multiplication : %d\n\n", mul);
+    printf("Division : %f\n\n", div);
+    printf("Remender : %d\n\n", rem);
+
+    printf("-----------------------------\n\n");
+
+    getch();
+}
