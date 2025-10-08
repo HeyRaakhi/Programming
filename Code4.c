@@ -1,0 +1,38 @@
+//WAP to Read any Three Integer Numbers from the Keyboard and Find the Largest Number among them by using Nested if else and Ladder if else Statements.
+
+#include <stdio.h>
+#include <conio.h>
+
+void main()
+{
+    int a,b,c;
+
+    printf("Enter any THREE Integer Numbers\n\n");
+    scanf("%d%d%d",&a,&b,&c);
+    
+      if(a > b)
+    {
+      if(a > c)
+        {
+          printf("\n\n%d is Greater\n\n",a);
+        }
+  
+    else
+       {
+          printf("\n\n%d is Greater\n\n",c);
+       }
+    }
+    else
+       {
+        if(b > c)
+           {
+              printf("\n\n%d is Greater\n\n",b);
+           }
+        else
+          {
+             printf("\n\n%d is Greater\n\n",c);
+          }
+       }
+getch();
+
+}
