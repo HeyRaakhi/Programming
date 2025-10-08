@@ -1,0 +1,22 @@
+//WAP to Read any Three Integer Numbers for variables A, B, and C and Check that B is the Middle value of A and C or Not.
+
+#include <stdio.h>
+#include <conio.h>
+void main()
+{
+    int A,B,C;
+
+    printf("ENTER any THREE Integer Numbers\n\n");
+    scanf("%d%d%d",&A,&B,&C);
+
+    if( ( (A < B) && (B < C) ) || ( (A > B) && (B > C) ) )
+
+    {
+       printf("\n\n%d Is Middle value of %d and %d",B,A,C);
+    }
+       else
+         {
+            printf("\n\n%d Is NOT Middle value of %d and %d",B,A,C);
+         }
+    getch();
+}
